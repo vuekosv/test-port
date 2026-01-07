@@ -1,0 +1,94 @@
+h1 {
+    font-size: 48px;
+    font-family: Trebuchet MS;
+    font-weight: bolder;
+    font-style: italic;
+
+    color: rgb(26, 26, 26);
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: #53ebff 2px 3px 10px;
+    box-shadow: rgb(71, 49, 49) 2px 3px 10px;
+}
+img {
+width: 452px;
+border: 4px solid rgb(235, 235, 235);
+/* Esquerda superior, Direita Superior, Direita Inferior, Esquerda Inferior */
+border-radius: 30px 30px 30px 30px;
+}
+
+h2 {
+
+font-size: 30px;
+color:white;
+font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+
+/* ESTUDAR */
+body {
+    
+  background-image: url 'https://getwallpapers.com/wallpaper/full/6/5/3/462965.jpg';
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center; 
+  color: white;
+  font-family: Trebuchet MS;
+}
+
+/* REVISAR */
+
+.zoom-img {
+  transition: transform 0.5s ease; 
+}
+
+.zoom-img:hover {
+  transform: scale(1.1); /* aumenta 10% o tamanho da imagem */
+}
+
+/* INICIO DO PARALLAX */
+.parallax {
+  background-image: url('https://getwallpapers.com/wallpaper/full/6/5/3/462965.jpg');
+  min-height: 100vh; /* ocupa a tela inteira */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.conteudo {
+  background-color: rgba(0, 0, 0, 0.6); /* opcional: fundo semitransparente */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+
+
+.widget-float {
+    position: fixed;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(75, 26, 26, 0);
+    color: rgb(3, 3, 3);
+    backdrop-filter: blur(2px);
+    padding: 20px 28px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(143, 122, 122, 0.685);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center ;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Animação de flutuação */
+@keyframes float {
+    0% { transform: translate(-50%, -50%) translateY(0px); }
+    50% { transform: translate(-50%, -50%) translateY(-20px); }
+    100% { transform: translate(-50%, -50%) translateY(0px); }
+}
